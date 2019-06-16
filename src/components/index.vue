@@ -60,10 +60,10 @@ export default {
 
   methods: {
     loadDate: function () {
-      this.$http.get(API_URL) //เรียกใช้ ้kttp ที่ API_URL
+      this.$http.get(API_URL) 
         .then(response => {
           // console.log(response)
-          this.namedata = response.body //เก็บไว้ในตัวแปร teest
+          this.namedata = response.body
         }, () => {
           this.namedata = []
         })
